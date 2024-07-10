@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fundamentals</title>
+</head>
+<body>
+    <!--Body contains the content of the webpage-->
+    <header>
+        <h1>This is a heading</h1>
+        <h2>This is a heading</h2>
+        <h3>This is a heading</h3>
+        <h4>This is a heading</h4>
+        <h5>This is a heading</h5>
+        <h6>This is a heading</h6>
+    </header>
+
+    <hr>
+
+    <section>
+        <p>This is a paragraph with one line</p>
+        <p>This is another paragraph</p>
+
+        <p>This is the first line. <br>This is the second line. <br>This is the third line</p>
+
+        <p>This is an <b>important</b> text.</p>
+        <p>This is an <strong>important</strong> text.</p>
+        <p>This text is <em>emphasized</em>.</p>
+        <p>This text is <u>underlined</u>.</p>
+        <p>This text is <s>no longer valid</s>.</p>
+        <p>H <sub>2</sub>O is water.</p>
+        <p>4 <sup>2</sup> is equal to 16</p>
+    </section>
+    <hr>
+    <section id="lists">
+        <h3>Fruits</h3>
+        <!-- ordered list -->
+        <ol>
+            <li>mango</li>
+            <li>Dragon Fruit</li>
+            <li>Orange</li>
+        </ol>
+        <ol type="A">
+            <li>mango</li>
+            <li>Dragon Fruit</li>
+            <li>Orange</li>
+        </ol>
+        <!-- unordered list -->
+        <h3>More Fruits</h3>
+        <ul>
+            <li>Avocado</li>
+            <li>Peach</li>
+            <li>Apple</li>
+        </ul>
+        <!-- nested list -->
+         <ul>
+            <li>Tree
+                <ul>avocado</ul>
+            </li>
+         </ul>
+    </section>
+    <hr>
+    <section>
+        <!-- usage of form elements: input text area, select, button -->
+         <form action="submit_page.php" method="post">
+            <h2>Form Example</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required/>
+
+            <label for="hobbies">Hobbies:</label>
+            <textarea name="hobbies" id="hobbies" rows="4" cols="50"></textarea>
+            <br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+
+            <!-- Radio buttons and checkboxes provide options for users for selection -->
+             <input type="radio" name="options" id="option1" value="option1" required>
+             <label for="option1">Option1</label>
+             <input type="radio" name="options" id="option2" value="option2" required>
+             <label for="option2">Option2</label>
+
+             <br>
+
+             <input type="checkbox" name="check" id="check1" value="check1">
+             <label for="check1">Check1</label>
+             <input type="checkbox" name="check" id="check2" value="check2">
+             <label for="check2">Check2</label>
+
+             <button type="submit">Submit</button>
+         </form>
+    </section>
+    <hr>
+
+    <img src="background.png" alt="chair" width="300px">
+    <img src="https://static.scientificamerican.com/sciam/cache/file/C37174A9-488C-49D4-B9C79B4E8EB39287_source.jpg?w=1200" alt="Fiery Red Bird" width="300px">
+
+    <footer id="links">
+        <h3>LINKS:</h3>
+        <ul>
+            <li>
+                <!-- redirects to another tab -->
+                <a href="https://www.google.com" target="_blank">Go to Google</a>                 
+            </li>
+            <li>
+                <!-- First space in page -->
+                <a href="#">Go to Top</a>
+            </li>
+            <li>
+                <a href="#header">Go to Header</a>
+            </li>
+            <li>
+                <a href="#paragraph">Go to Paragraph</a>
+            </li>
+            <li>
+                <a href="#lists">Go to Lists</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
