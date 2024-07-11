@@ -1,0 +1,57 @@
+span {
+    color: blue;
+}
+
+.class-name {
+    color: aqua;
+}
+
+#id-name {
+    color: green;
+}
+
+/* universal selector */
+* {
+    color: brown;
+    font-size: 25px;
+}
+
+/* attribute selector */
+a[href] {
+    color: violet;
+}
+
+a[href="www.sample.com"] {
+    color: tomato;
+}
+
+/* grouping selector */
+h1, .parag, h2 {
+    color: maroon;
+}
+
+/* descendant selector */
+.ancestor h3 {
+    color: lightcoral;
+}
+
+/* preudo selectors */
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+a[href="https://www.example.com"]:visited {
+    color: fuchsia;
+}
+
+/* pseudo elemnts */
+#pseudo-element::before {
+    content: "This is a paragraph before h3";
+    color: black;
+}
+
+#pseudo-element::after {
+    content: "This is a paragraph after h3";
+    color: chocolate;
+}
